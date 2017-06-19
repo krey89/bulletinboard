@@ -1,0 +1,18 @@
+<% include header.ejs %>
+
+
+  <div class="box">
+    <h1>Bulletin Board</h1>
+    <h5>Entries</h5>
+  </div>
+  <div class="box">
+  <ul>
+    <% for (var i =0; i<data.length; i++) {%>
+      <li><a href=<%="messages/" + data[i].id%>><%= data[i].title %></a></li>
+    <% } %>
+    </ul>
+
+    <% include footer.ejs %>
+
+</body>
+</html>

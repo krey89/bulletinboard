@@ -1,0 +1,2 @@
+export POSTGRES_USER=kevinreyes
+export POSTGRES_PASSWORD=abc123
