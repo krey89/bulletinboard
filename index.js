@@ -10,8 +10,8 @@ app.use(express.static(__dirname + '/public'));
 
 app.set('view engine', 'ejs');
 app.set('views','./views');
- const connectionString = process.env.DATABASE_URL || 'postgres://localhost:5432/bulletinboard';
-// var connectionString = 'postgres://' + process.env.POSTGRES_USER + ':' + process.env.POSTGRES_PASSWORD + '@localhost/bulletinboard';
+// const connectionString = process.env.DATABASE_URL || 'postgres://localhost:5432/bulletinboard';
+var connectionString = 'postgres://' + process.env.POSTGRES_USER + ':' + process.env.POSTGRES_PASSWORD + '@localhost/bulletinboard';
 app.get('/', function(req, res){
   res.redirect('/home');
 })
